@@ -1,9 +1,54 @@
-<html>
-  <head>
-    <title>Corrib Digital</title>
-  </head>
+<!DOCTYPE html>
+<html class="layout-home">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Corrib Digital dot com</title>
+        <meta name="description" content="I am a one man band trying to make the web a better place.">
+        <meta name="author" content="Michael McAndrew">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
 
-  <body>
-      <h1>Corrib Digital</h1>
-  </body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/typed.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                Typed.new('#typed', {
+                    stringsElement: document.getElementById('typed-strings'),
+                    startDelay: 2000,
+                    typeSpeed: -20
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <nav id="nav">
+            <ul class="nav-list">
+                <li class="nav-about">About</li>
+                <li class="nav-work">Work</li>
+                <li class="nav-blog">Blog</li>
+                <li class="nav-contact">Contact</li>
+            </ul>
+            <img src="images/logo_small.png" id="logo" />
+            <div class="corrib-digital">
+                <div class="corrib">Corrib</div>
+                <div class="digital">Digital</div>
+            </div>
+        </nav>
+        
+        <section class="section-1 section-intro">
+            <div class="text-wrapper">
+                <div id="typed-strings">
+                    <p>Welcome to Corrib Digital. We are web designers and developers.</p>
+                </div>
+                <span id="typed"></span>
+            </div>
+        </section>
+
+        <div class="scroll-down">
+            <img src="images/arrow-down.png" class="down-arrow" />
+        </div>
+    </body>
+
 </html>
