@@ -1,9 +1,0 @@
-#Site settings
-title: Corrib Digital
-email: michael@corribdigital.com
-description: Welcome to Corrib Digital. We are web designers and developers
-
-markdown: kramdown
-permalink: pretty
-baseurl: ""
-exclude: ['README.md']
