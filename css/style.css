@@ -15,6 +15,14 @@
     font-weight: lighter;
 }
 
+@font-face
+{
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Bold.ttf')
+        format('opentype');
+    font-weight: bold;
+}
+
 html
 {
     font-family: sans-serif;
@@ -24,8 +32,16 @@ body
 {
     background-color: #E2E2E2;
     position: relative;
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     margin: 0;
+}
+
+h1
+{
+  font-family: 'Open Sans';
+  font-weight: bold;
+  color: #5E5E5E;
+  font-size: 2em;
 }
 
 body:before
@@ -40,8 +56,36 @@ body:before
     pointer-events: none;
 }
 
+p
+{
+  font-family: 'Open Sans';
+  font-weight: normal;
+  color: #5E5E5E;
+}
+
+h3
+{
+  font-family: 'Open Sans';
+  font-weight: normal;
+  color: #5E5E5E;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Navigation */
+
+#nav
+{
+  position: absolute;
+  z-index: 1000;
+  top: 10vh;
+  max-width: 450px;
+  left: 50%;
+  margin-left: -225px;
+}
+
 .nav-list
-{   
+{
     display: table;
     cursor: default;
     margin-left: auto;
@@ -160,11 +204,13 @@ body:before
     }
 }
 
+/* Intro Section */
+
 .section-intro
 {
-    padding-top: 25vh;
     text-align: center;
     z-index: 1000;
+    height: 100vh;
 }
 
 .text-wrapper
@@ -172,6 +218,7 @@ body:before
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 40vh;
     padding-left: 20px;
     padding-right: 20px;
     height: 58px;
@@ -217,11 +264,13 @@ body:before
     100% { opacity:1; }
 }
 
-@media only screen and (max-width: 450px)
+@media only screen and (max-width: 465px)
 {
     #nav
     {
         zoom: 90%;
+        left: 50%;
+        margin-left: -185px;
     }
 
     .nav-list li
@@ -238,10 +287,12 @@ body:before
 
 .scroll-down
 {
-    margin-top: 45vh;
     width: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -50px;
 }
 
 .scroll-down p
@@ -261,4 +312,200 @@ body:before
     } 100% {
         height: 600px;
     }
+}
+
+/* About Section */
+.section-about
+{
+  background-color: #fff;
+  height: 1000px;
+}
+
+.section-header
+{
+  width: 160px;
+  padding-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-container
+{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.profile-image
+{
+  width: 200px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.about-paragraph
+{
+  max-width: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-paragraph p
+{
+  text-align: center;
+}
+
+.section-about a
+{
+  text-decoration: none;
+}
+
+.link-button
+{
+  border: solid #888888 1px;
+  line-height: 1;
+  padding: 10px 20px;
+  width: 134px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  font-family: 'Open Sans';
+  font-weight: normal;
+  color: #888888;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.link-button-wrap :hover
+{
+  background-color: #fafafa;
+  transition: 0.5s;
+}
+
+.skills-container
+{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.skills-wrap
+{
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 50px;
+  float: left;
+}
+
+.skill
+{
+  position: relative;
+  margin-top: 20px;
+}
+
+.skill-text
+{
+  color: #95989A;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.skill-bar
+{
+  height: 4px;
+  max-width: 400px;
+  margin-top: 4px;
+  background-color: #E0E0E0;
+}
+
+.ux-skill-bar
+{
+  height: 4px;
+  background-color: #858585;
+  animation-name: ux-skills-animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.graphics-skill-bar
+{
+  height: 4px;
+  background-color: #858585;
+  animation-name: graphics-skills-animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.programming-skill-bar
+{
+  height: 4px;
+  background-color: #858585;
+  animation-name: programming-skills-animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ux-skills-animation
+{
+  0% {width: 60%;}
+  100% {width: 100%;}
+}
+
+@keyframes graphics-skills-animation
+{
+  0% {width: 60%;}
+  100% {width: 80%;}
+}
+
+@keyframes programming-skills-animation
+{
+  0% {width: 60%;}
+  100% {width: 85%;}
+}
+
+/* Work Section */
+
+.section-work
+{
+  height: 1000px;
+}
+
+.images-wrap
+{
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-image-small
+{
+  max-width: 500px;
+  position: relative;
+  top: -7px;
+}
+
+.work-image-large
+{
+  max-width: 530px;
+  position: relative;
+  z-index: 1001;
+}
+
+#pshow-image
+{
+  margin-left: -200px;
+}
+
+#galwaytherapist-image
+{
+  margin-left: -220px;
+  z-index: 1;
 }
