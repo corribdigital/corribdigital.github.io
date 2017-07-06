@@ -665,20 +665,24 @@ a :visited
 @keyframes work-image-left-animation {
   0% {
     left: 50%;
+    opacity: 1;
   }
 
   100% {
     left: 40%;
+    opacity: 1;
   }
 }
 
 @keyframes work-image-right-animation {
   0% {
     left: 50%;
+    opacity: 1;
   }
 
   100% {
     left: 60%;
+    opacity: 1;
   }
 }
 
@@ -702,6 +706,10 @@ a :visited
 
   55% {
     transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
