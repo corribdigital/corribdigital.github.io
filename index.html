@@ -11,6 +11,7 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="js/typed.js"></script>
+        <script src="js/script.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function(){
                 Typed.new('#typed', {
@@ -45,6 +46,7 @@
                 <span id="typed"></span>
             </div>
             <div class="scroll-down">
+                <p>Scroll to continue</p>
                 <img src="images/arrow-down.png" class="down-arrow" />
             </div>
         </section>
@@ -57,33 +59,34 @@
             <img src="images/profile.jpg" class="profile-image" />
           </div>
           <div class="about-paragraph">
-            <h3>My name is Michael and I’m a 19 year old web designer and 2nd year
-            Computer Science student. I am co-host of the 99% podcast and self
-            proclaimed technology enthuisiast.</h3>
+            <h3>My name is Michael and I specialise in making things. By day I'm a Computer Science
+            student and by night I'm a full process designer and podcast host.</h3>
           </div>
           <div class="skills-container">
             <div class="skills-wrap">
               <div class="skill ux-skill">
                 <div class="skill-text">UX Design</div>
-                <div class="skill-bar"><div class="ux-skill-bar"></div></div>
+                <div class="skill-bar-wrap"><div class="ux-skill-bar"><div class="skill-bar"></div></div></div>
               </div>
               <div class="skill graphics-skill">
                 <div class="skill-text">Graphics Design</div>
-                <div class="skill-bar"><div class="graphics-skill-bar"></div></div>
+                <div class="skill-bar-wrap"><div class="graphics-skill-bar"><div class="skill-bar"></div></div></div>
               </div>
             </div>
             <div class="skills-wrap">
               <div class="skill programming-skill">
                 <div class="skill-text">Programming</div>
-                <div class="skill-bar"><div class="programming-skill-bar"></div></div>
+                <div class="skill-bar-wrap"><div class="programming-skill-bar"><div class="skill-bar"></div></div></div>
               </div>
               <div class="skill web-skill">
                 <div class="skill-text">Web Development</div>
-                <div class="skill-bar"><div class="ux-skill-bar"></div></div>
+                <div class="skill-bar-wrap"><div class="ux-skill-bar"><div class="skill-bar"></div></div></div>
               </div>
             </div>
           </div>
-          <a href="" class="link-button-wrap"><div class="link-button">Read More About Me</div></a>
+          <div id="about-button">
+            <a href="" class="link-button-wrap"><div class="link-button about-me-button">Read More About Me</div></a>
+          </div>
         </section>
 
         <section class="section-3 section-work">
@@ -91,11 +94,59 @@
             <h1>Work</h1>
           </div>
           <div class="images-wrap">
-            <img src="images/style_by_anna.jpg" class="work-image-small" />
-            <img src="images/99pshow.jpg" class="work-image-large" id="pshow-image" />
-            <img src="images/thegalwaytherapist.jpg" class="work-image-small" id="galwaytherapist-image" />
+            <img src="images/style_by_anna.jpg" class="work-image-small work-image-left" />
+            <img src="images/99pshow.jpg" class="work-image-large" />
+            <img src="images/thegalwaytherapist.jpg" class="work-image-small work-image-right" />
+          </div>
+          <div class="worked-with-wrap">
+            <img src="images/kilcawley.png" class="worked-with-image kilcawley-image" />
+            <img src="images/style_by_anna.png" class="worked-with-image style-by-image" />
+            <img src="images/99pimage.png" class="worked-with-image percent-image" />
+            <img src="images/cell-explorers.png" class="worked-with-image explorers-image" />
+          </div>
+          <div id="work-button">
+            <a href="" class="link-button-wrap"><div class="link-button portfolio-button">View All Casestudies</div></a>
           </div>
         </section>
+
+        <section class="section-4 section-build">
+          <div class="build-content-container">
+            <div class="section-header">
+              <h1>Let's Build Your Website</h1>
+            </div>
+            <div class="build-paragraph">
+              <h3>I will build your website complete with a blog, optimised for the web for €500.
+              Get in contact with me today and let's build your website.</h3>
+            </div>
+            <div id="contact-button">
+              <a href="" class="link-button-wrap"><div class="link-button">Let's Work Together</div></a>
+            </div>
+          </div>
+          <div class="build-image-container">
+            <img src="images/build_website.jpg" id="build-img">
+          </div>
+        </section>
+
+        <section class="section-5 section-stats">
+          <div class="stats-container">
+            <div class="stat stat-late-nights">
+              <div class="number"><h1>12</h1></div>
+              <h3>Late nights this month</h3>
+            </div>
+            <div class="stat stat-cidona">
+              <div class="number"><h1>6</h1></div>
+              <h3>Litres of cidona consumed this week</h3>
+            </div>
+            <div class="stat stat-days-off">
+              <div class="number"><h1>0</h1></div>
+              <h3>Days off this year</h3>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <p>Copyright © 2017 Corrib Digital. All rights reserved.</p>
+        </footer>
     </body>
 
 </html>
